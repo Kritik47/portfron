@@ -1,0 +1,57 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.SCARD{
+    width:280px;
+    height:200px;
+    border:1px solid #D90166;
+    margin:2px;
+    margin-top:40px;
+    border-radius:15px;
+    transition:0.3s;
+    box-shadow:0 4px 8px 0 rgba(0,0,0,.2),
+    0px 6px 20px 0 rgba(0,0,0,.19);
+}
+.SCARD:hover{
+    transform:scale(1.1);
+}
+.TITLE{
+    text-align:center;
+    font-size:18px;
+    font-weight:bold;
+    padding-top:15px;
+    color:#D90166;
+}
+.CARDPARA{
+    text-align:center;
+    font-weight:bold;
+    padding-top:5px;
+    color:white;
+}
+.SBUTTON{
+    width:100px;
+    height:30px;
+    font-weight:bold;
+    background-color:#D90166;
+    border-radius:5px;
+    color:white;
+    transform:translate(90px,0px);
+    font-size:15px;
+    transition:0.3s;
+    border:none;
+}
+.SBUTTON:hover{
+    background-color: #D90166;
+    color:white;
+}
+@media(max-width:570px){
+    .SCARD{
+        width:250px;
+        height:180px;
+    }
+    .SBUTTON{
+        transform:translate(80px,0px);
+    }
+}
