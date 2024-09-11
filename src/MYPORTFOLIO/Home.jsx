@@ -26,7 +26,7 @@ const Home = () => {
           className="text-lg md:text-xl mb-8"
         />
         <a
-          href="/resume.pdf"  // Ensure the resume is placed in the public folder
+            href="/files/resume.pdf"
           className="bg-gradient-to-r from-blue-400 to-teal-400 hover:from-blue-500 hover:to-teal-500 text-white font-bold py-2 px-4 rounded shadow-lg transition-transform transform hover:scale-105"
           download
         >
