@@ -19,7 +19,7 @@ const All = () => {
   async function getData() {
     setLoading(true);
     try {
-      const res = await axios.get("https://pronew.onrender.com/api/mdmarts");
+      const res = await axios.get("https://mdmartsserver.onrender.com/api/mdmarts");
       setData(res.data);
     } catch (error) {
       console.error("Error fetching data:", error);

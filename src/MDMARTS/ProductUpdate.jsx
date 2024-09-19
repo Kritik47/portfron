@@ -17,7 +17,7 @@ const ProductUpdate = () => {
     try {
       const ID = 10001;
       let m = prompt('ONLY DEVELOPER CAN UPDATE ITEM HERE');
-      m = parseInt(m, 10); // Convert m to an integer
+      m = parseInt(m, 10);
       if (m === ID) {
         let response = await axios.put(`https://pronew.onrender.com/api/mdmarts/${id}`, AllData);
         response = await response.data;
@@ -54,7 +54,7 @@ const ProductUpdate = () => {
       formData.append('cloud_name', 'dulq1nkwm');
       const ID = 10001;
       let m = prompt('ONLY DEVELOPER CAN UPLOAD..');
-      m = parseInt(m, 10); // Convert m to an integer
+      m = parseInt(m, 10);
       if (m === ID) {
         const response = await axios.post('https://api.cloudinary.com/v1_1/dulq1nkwm/image/upload', formData);
         setProImage(response.data.secure_url);

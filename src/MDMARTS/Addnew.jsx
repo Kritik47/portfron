@@ -19,7 +19,7 @@ const Addnew = () => {
         let m = prompt('ONLY DEVELOPER CAN ADD ITEM HERE');
         m = parseInt(m, 10); // Convert m to an integer
         if (m === ID) {
-          const response = await axios.post('https://pronew.onrender.com/api/mdmarts', AllData);
+          const response = await axios.post('https://mdmartsserver.onrender.com/api/mdmarts', AllData);
           alert("Product added successfully!");
           console.log(response.data);
           setProImage(null);

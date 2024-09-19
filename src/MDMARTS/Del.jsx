@@ -10,7 +10,7 @@ const Del = ({ id }) => {
     useEffect(() => {
         async function GetData() {
             try {
-                let response = await axios.get(`https://pronew.onrender.com/api/mdmarts/${id}`);
+                let response = await axios.get(`https://mdmartsserver.onrender.com/api/mdmarts/${id}`);
                 response = response.data;
                 SetValue(response);
             } catch (error) {
@@ -26,7 +26,7 @@ const Del = ({ id }) => {
             if (Value.protype === "Fancy") {
                 let m = parseInt(prompt('ONLY DEVELOPER CAN DELETE..'));
                 if (ID === m) {
-                    let response = await axios.delete(`https://pronew.onrender.com/api/mdmarts/${id}`);
+                    let response = await axios.delete(`https://mdmartsserver.onrender.com/api/mdmarts/${id}`);
                     response = response.data;
                     alert('Data deleted....');
                     nav('/fancy');
@@ -35,7 +35,7 @@ const Del = ({ id }) => {
             if (Value.protype === "Grocery") {
                 let m = parseInt(prompt('ONLY DEVELOPER CAN DELETE..'));
                 if (ID === m) {
-                    let response = await axios.delete(`https://pronew.onrender.com/api/mdmarts/${id}`);
+                    let response = await axios.delete(`https://mdmartsserver.onrender.com/api/mdmarts/${id}`);
                     response = response.data;
                     alert('Data deleted....');
                     nav('/');
@@ -44,7 +44,7 @@ const Del = ({ id }) => {
             if (Value.protype === "Mobile") {
                 let m = parseInt(prompt('ONLY DEVELOPER CAN DELETE..'));
                 if (ID === m) {
-                    let response = await axios.delete(`https://pronew.onrender.com/api/mdmarts/${id}`);
+                    let response = await axios.delete(`https://mdmartsserver.onrender.com/api/mdmarts/${id}`);
                     response = response.data;
                     alert('Data deleted....');
                     nav('/mobile');
@@ -53,7 +53,7 @@ const Del = ({ id }) => {
             if (Value.protype === "Laptop") {
                 let m = parseInt(prompt('ONLY DEVELOPER CAN DELETE..'));
                 if (ID === m) {
-                    let response = await axios.delete(`https://pronew.onrender.com/api/mdmarts/${id}`);
+                    let response = await axios.delete(`https://mdmartsserver.onrender.com/api/mdmarts/${id}`);
                     response = response.data;
                     alert('Data deleted....');
                     nav('/laptop');

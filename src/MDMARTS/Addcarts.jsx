@@ -19,7 +19,7 @@ const Addcarts = () => {
   const HandleStripe = async () => {
     const Stripe = await loadStripe('pk_test_51PGBd4SIVAMgmpINu8DChyeLmWLx5aZqCd1M2tqzjGmzKPwjMOQIGCELPPfxGeqD28tX2AOonm4kbGEEJ0XK0WQH00fTTMO2IX');
     try {
-      let response = await axios.post('https://pronew.onrender.com/api/stripe', data);
+      let response = await axios.post('https://mdmartsserver.onrender.com/api/stripe', data);
       response = await response.data;
       const result = await Stripe.redirectToCheckout({
         sessionId: response.id
