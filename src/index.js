@@ -1,14 +1,10 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import App from './MDMARTS/App';
-import ProductStore from './MDMARTS/ProductStore';
-import { Provider } from 'react-redux';
+import App from './MYPORTFOLIO/App';
 const container = document.getElementById('root');
 const root = createRoot(container);
 root.render(
   <React.StrictMode>
-    <Provider store={ProductStore}>
-      <App/>
-    </Provider>
+    <App/>
   </React.StrictMode>
 );
