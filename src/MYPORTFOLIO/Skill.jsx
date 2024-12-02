@@ -12,7 +12,7 @@ const Skill = () => {
   useEffect(() => {
     async function GetData() {
       try {
-        let response = await axios.get("https://myportfolio-server-i9mk.onrender.com/skillmyportfolio");
+        let response = await axios.get("https://portfolioserver-kakv.onrender.com/skillmyportfolio");
         response = await response.data;
         SetApiData(response.DATA);
       } catch (e) {
@@ -28,7 +28,7 @@ const Skill = () => {
     try {
       if (skillimage && skillname) {
         const allData = { skillname, skillimage };
-        let response = await axios.post("https://portfolioserver-vj1a.onrender.com/skillmyportfolio", allData);
+        let response = await axios.post("https://portfolioserver-kakv.onrender.com/skillmyportfolio", allData);
         alert("Skill added successfully!");
         setSkillName('');
         setSkillImage('');

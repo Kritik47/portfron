@@ -13,7 +13,7 @@ const Project = () => {
   useEffect(() => {
     async function GetData() {
       try {
-        let response = await axios.get("https://myportfolio-server-i9mk.onrender.com/projectmyportfolio");
+        let response = await axios.get("https://portfolioserver-kakv.onrender.com/projectmyportfolio");
         response = await response.data;
         SetApiData(response.DATA);
       } catch (e) {
@@ -29,7 +29,7 @@ const Project = () => {
     try {
       if (title && image && link) {
         const allData = { title, link, image };
-        const response = await axios.post("https://portfolioserver-vj1a.onrender.com/projectmyportfolio", allData);
+        const response = await axios.post("https://portfolioserver-kakv.onrender.com/projectmyportfolio", allData);
         console.log(response);
         alert("Project added successfully!");
         setTitle('');
